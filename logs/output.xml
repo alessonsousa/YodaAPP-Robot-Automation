@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.9.13 on win32)" generated="2025-10-18T12:42:04.557636" rpa="false" schemaversion="5">
+<suite id="s1" name="Click" source="C:\QAx\projects\yodapp-robot\tests\click.robot">
+<test id="s1-t1" name="Abrir App Android" line="7">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://127.0.0.1:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>app=${EXECDIR}/app/yodapp-beta.apk</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="PASS" start="2025-10-18T12:42:04.926450" elapsed="8.592199"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Yodapp</arg>
+<arg>10</arg>
+<doc>Waits until the ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-18T12:42:13.519941" elapsed="5.208072"/>
+</kw>
+<kw name="Click Text" owner="AppiumLibrary">
+<msg time="2025-10-18T12:42:19.515017" level="INFO">xpath criteria: //*[@text="QAX"]</msg>
+<arg>QAX</arg>
+<arg>10</arg>
+<doc>Clicks the text identified by ``text``.</doc>
+<status status="PASS" start="2025-10-18T12:42:18.729011" elapsed="0.786006"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-18T12:42:24.532332" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-18T12:42:19.516016" elapsed="5.016316"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="PASS" start="2025-10-18T12:42:24.533348" elapsed="0.816985"/>
+</kw>
+<status status="PASS" start="2025-10-18T12:42:04.924944" elapsed="20.426385"/>
+</test>
+<status status="PASS" start="2025-10-18T12:42:04.559664" elapsed="20.792802"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Click" id="s1" pass="1" fail="0" skip="0">Click</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

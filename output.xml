@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.9.13 on win32)" generated="2025-10-22T20:27:38.515381" rpa="false" schemaversion="5">
+<suite id="s1" name="Click" source="c:\QAx\projects\yodapp-robot\tests\click.robot">
+<test id="s1-t1" name="Deve realizar um click simples" line="10">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://127.0.0.1:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>app=${EXECDIR}/app/yodapp-beta.apk</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="PASS" start="2025-10-22T20:27:39.884231" elapsed="24.215623"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-10-22T20:28:10.831903" level="INFO">xpath criteria: //android.widget.Button[@text='QAX']</msg>
+<arg>xpath=//android.widget.Button[@text='${START}']</arg>
+<arg>10</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-22T20:28:04.102418" elapsed="6.735448"/>
+</kw>
+<kw name="Element Should Be Visible" owner="AppiumLibrary">
+<msg time="2025-10-22T20:28:11.086693" level="INFO">xpath criteria: //android.widget.Button[@text='QAX']</msg>
+<arg>xpath=//android.widget.Button[@text='${START}']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-22T20:28:10.840246" elapsed="0.246447"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-10-22T20:28:11.091744" level="INFO">Clicking element 'xpath=//android.widget.Button[@text='QAX']'.</msg>
+<msg time="2025-10-22T20:28:11.474836" level="INFO">xpath criteria: //android.widget.Button[@text='QAX']</msg>
+<arg>xpath=//android.widget.Button[@text='${START}']</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-22T20:28:11.088686" elapsed="0.387240"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Clique em Botões</arg>
+<arg>10</arg>
+<doc>Waits until the ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-22T20:28:11.476929" elapsed="1.676240"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-10-22T20:28:13.439659" level="INFO">xpath criteria: //android.widget.ImageButton[@content-desc="Open navigation drawer"]</msg>
+<arg>xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+<arg>5</arg>
+<doc>Waits until the element specified by the ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-22T20:28:13.154692" elapsed="0.286398"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-10-22T20:28:13.445153" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<msg time="2025-10-22T20:28:14.015309" level="INFO">xpath criteria: //android.widget.ImageButton[@content-desc="Open navigation drawer"]</msg>
+<arg>xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+<doc>Clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-22T20:28:13.441090" elapsed="0.575654"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="PASS" start="2025-10-22T20:28:14.018012" elapsed="2.352180"/>
+</kw>
+<status status="PASS" start="2025-10-22T20:27:39.879659" elapsed="36.491994"/>
+</test>
+<status status="PASS" start="2025-10-22T20:27:38.531813" elapsed="37.842657"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Click" id="s1" pass="1" fail="0" skip="0">Click</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
